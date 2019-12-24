@@ -1,0 +1,83 @@
+.hide {
+    display: none;
+}
+
+.masthead .button.button--clear {
+    margin-bottom: 0;
+    color: white;
+}
+
+input[type="date"] {
+    display: block;
+    margin: 0 0 1.5rem;
+    padding: .5rem 1rem;
+    width: auto;
+    border: 1px solid #E0E0E0;
+    border-radius: 0;
+    background-color: #fff;
+    color: #A4A4A4;
+    font-size: 1rem;
+    font-family: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input {
+    height: 42px;
+    color: dimgrey !important;
+}
+
+.v-gap-b {
+    margin-bottom: 1.5rem;
+}
+
+.v-gap-t {
+    margin-top: 1.5rem;
+}
+
+.rm-v-gap, 
+input.rm-v-gap {
+    margin: 0 0;
+}
+
+.logo-dt {
+    background-color: dimgrey;
+    height: 56px;
+    float: left;
+    margin-right: 1.5rem;
+}
+
+#tracelog {
+    font-size: small;
+    font-family: fantasy;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 380px) {
+    #tracelog {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .button {
+        padding: .2rem .6rem;
+    }
+    #menu.grid__column {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 490px) and (max-width: 767px) {
+    .button {
+        padding: .3rem 1rem;
+    }
+    #menu.grid__column {
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: lightgrey;
+}
