@@ -1,6 +1,6 @@
 #!/bin/sh
 ROOT_DIR="$PWD"
-APP_VER="1.0.0"
+APP_VER="1.0.1"
 
 process_build() {
     echo "Check binary"
@@ -9,8 +9,6 @@ process_build() {
     cd $BUILD_DIR
     wasm-bindgen --target web --no-typescript --out-dir . ds.wasm
     file ds_bg.wasm
-    echo "Optimize build"
-    wasm-gc ds_bg.wasm
     echo "Remake $WEB_WASM_DIR dir"
     cd $ROOT_DIR
     rm -rf $WEB_WASM_DIR

@@ -3,9 +3,11 @@
 
 I have developed a new way to encode/decode dates within 3 or 4 characters by using *base-99* format. 
 
+<!--
 You can click this link to open the app in your browser
 
 [![Date Shortener Web](https://img.shields.io/badge/Link-Date%20Shortener-blueviolet?style=for-the-badge)](https://isurfer21.github.io/date-shortener-web/web/)
+-->
 
 The logic behind this utility tool and reason of it's creation is described below.
 
@@ -21,16 +23,16 @@ In simple language, base-99 format refers to series of 0-9 followed by small & c
 
 |	 	|	0	|	1	|	2	|	3	|	4	|	5	|	6	|	7	|	8	|	9	|
 |-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
-|	0	|	0	|	1	|	2	|	3	|	4	|	5	|	6	|	7	|	8	|	9	|
-|	1	|	a	|	b	|	c	|	d	|	e	|	f	|	g	|	h	|	i	|	j	|
-|	2	|	k	|	l	|	m	|	n	|	o	|	p	|	q	|	r	|	s	|	t	|
-|	3	|	u	|	v	|	w	|	x	|	y	|	z	|	A	|	B	|	C	|	D	|
-|	4	|	E	|	F	|	G	|	H	|	I	|	J	|	K	|	L	|	M	|	N	|
-|	5	|	O	|	P	|	Q	|	R	|	S	|	T	|	U	|	V	|	W	|	X	|
-|	6	|	Y	|	Z	|	à	|	è	|	ì	|	ò	|	ù	|	À	|	È	|	Ì	|
-|	7	|	Ò	|	Ù	|	á	|	é	|	í	|	ó	|	ú	|	Á	|	É	|	Í	|
-|	8	|	Ó	|	Ú	|	â	|	ê	|	î	|	ô	|	û	|	Â	|	Ê	|	Ô	|
-|	9	|	Û	|	Î	|	ä	|	ë	|	ï	|	ö	|	ü	|	Ä	|	Ë	|	Ï	|
+| **0** |	0	|	1	|	2	|	3	|	4	|	5	|	6	|	7	|	8	|	9	|
+| **1** |	a	|	b	|	c	|	d	|	e	|	f	|	g	|	h	|	i	|	j	|
+| **2** |	k	|	l	|	m	|	n	|	o	|	p	|	q	|	r	|	s	|	t	|
+| **3** |	u	|	v	|	w	|	x	|	y	|	z	|	A	|	B	|	C	|	D	|
+| **4** |	E	|	F	|	G	|	H	|	I	|	J	|	K	|	L	|	M	|	N	|
+| **5** |	O	|	P	|	Q	|	R	|	S	|	T	|	U	|	V	|	W	|	X	|
+| **6** |	Y	|	Z	|	à	|	è	|	ì	|	ò	|	ù	|	À	|	È	|	Ì	|
+| **7** |	Ò	|	Ù	|	á	|	é	|	í	|	ó	|	ú	|	Á	|	É	|	Í	|
+| **8** |	Ó	|	Ú	|	â	|	ê	|	î	|	ô	|	û	|	Â	|	Ê	|	Ô	|
+| **9** |	Û	|	Î	|	ä	|	ë	|	ï	|	ö	|	ü	|	Ä	|	Ë	|	Ï	|
 
 e.g., `12 → c, 19 → j, 34 → y`
 
@@ -86,7 +88,7 @@ $ sh build.sh -r
 ```
 
 ### Run project
-Run **static server** using *node.js* based script but has zero dependency
+Run **static server** using *node.js* based script having zero dependency
 
 ```
 $ sh build.sh -s
