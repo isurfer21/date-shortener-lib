@@ -18,8 +18,8 @@ So I was searching ways to reduce the timestamp, at least the date portion to sh
 
 Since I was looking for universal date conversion, so I would require something like base99 format. I looked over the Internet but I didn't found anything like that. So I made it by my own.
 
-### What is a base 99 format?
-In simple language, base-99 format refers to series of 0-9 followed by small & capital A-Z characters and variations of vowel characters (as shown below); were, each character refers to the position index in series.
+### What is a base99 format?
+In simple language, base99 format refers to series of 0-9 followed by small & capital A-Z characters and variations of vowel characters (as shown below); were, each character refers to the position index in series.
 
 |	 	|	0	|	1	|	2	|	3	|	4	|	5	|	6	|	7	|	8	|	9	|
 |-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
@@ -34,7 +34,25 @@ In simple language, base-99 format refers to series of 0-9 followed by small & c
 | **8** |	Ó	|	Ú	|	â	|	ê	|	î	|	ô	|	û	|	Â	|	Ê	|	Ô	|
 | **9** |	Û	|	Î	|	ä	|	ë	|	ï	|	ö	|	ü	|	Ä	|	Ë	|	Ï	|
 
+To remember the series, understand the sequence types as given below:
+
+1. Digits → 0-9
+2. Latin *Small* letter → a-z
+3. Latin *Capital* letter → A-Z
+4. Latin *Small* letter with **grave** → àèìòù
+5. Latin *Capital* letter with **grave** → ÀÈÌÒÙ
+6. Latin *Small* letter with **acute** → áéíóú
+7. Latin *Capital* letter with **acute** → ÁÉÍÓÚ
+8. Latin *Small* letter with **circumflex** → âêîôû
+9. Latin *Capital* letter with **circumflex** → ÂÊÔÛÎ
+10. Latin *Small* letter with **diaeresis** → äëïöü
+11. Latin *Capital* letter with **diaeresis** → ÄËÏ
+
+Using this format, any number in between 0-99 can be represented by a character positioned in base99 sequence 
+
 e.g., `12 → c, 19 → j, 34 → y`
+
+where, `c` is placed at 12th position in the sequence, `j` at 19th while `y` at 34th.
 
 Now here is a way to use the same logic for date, so to do that let us take a date and encode it as
 
