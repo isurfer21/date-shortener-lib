@@ -77,7 +77,7 @@ Follow the steps given below to encode or decode dates.
 2. Click on **Decode** button
 3. See the result in the input text field at *top* and ***steps*** in between buttons
 
-## For developers
+## Development
 
 ### New project
 Here are the commands used to create new project
@@ -110,4 +110,71 @@ Run **static server** using *node.js* based script having zero dependency
 
 ```
 $ sh build.sh -s
+```
+
+## Install
+With the added support for [Web Shell](http://webshell.surge.sh/), now the CLI port of the same app is also available.
+
+So at first, open the [Web Shell](http://webshell.surge.sh/) on browser, then to install the app run
+
+```
+install https://dateshortener.surge.sh/js/mod.js
+```
+
+That's it! Now you can try below commands.
+
+## Usage
+Open the application in terminal & run the required commands as shown below
+
+### Examples
+Few sample usages are given below
+
+```
+$ ds -t
+2ckj
+$ ds -t -s
+2-12-2019 -> 2.12.2019 -> 2.c.kj -> 2ckj
+$ ds -d 2ckj -s
+2ckj -> 2.c.kj -> 2.12.2019 -> 2-12-2019
+$ ds -e 2/12/2019 -s
+2-12-2019 -> 2.12.2019 -> 2.c.kj -> 2ckj
+```
+
+### Help
+Find out all the available command options & flags 
+
+```
+$ ds -h
+DATE SHORTENER
+It is a tool to shorten (encode) the date and expand (decode) shortened date back to original date.
+
+Usage: ds [options]
+
+Options:
+    -h, --help                 display the help menu
+    -v, --version              display the application version
+    -e, --encode DD-MM-YYYY    encode the provided date
+    -d, --decode DMY           decode the provided code
+    -t, --today                encode today's date
+    -s, --steps                show with steps
+
+Examples: 
+ $ ds -v 
+ $ ds -t 
+ $ ds -t -s 
+ $ ds -e 15/08/19 
+ $ ds -e 15/08/2019 -s 
+ $ ds -d f8j 
+ $ ds -d f8kj -s 
+
+```
+
+### Version
+See the currently available version
+
+```
+$ ds -v
+DATE SHORTENER (Version 1.0.0)
+Copyright (c) 2019 Abhishek Kumar.
+Licensed under the MIT License.
 ```
