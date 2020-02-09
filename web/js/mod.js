@@ -51,8 +51,6 @@ export function ds(param) {
         argToday = args.parse('today', 't', 'boolean', false),
         argSteps = args.parse('steps', 's', 'boolean', false);
 
-    init();
-
     if (argHelp) {
         return `${APPNAME}
 It is a tool to shorten (encode) the date and expand (decode) shortened date back to original date.
@@ -95,3 +93,5 @@ Licensed under the MIT License.
         return 'Arguments missing';
     }
 }
+
+init();
