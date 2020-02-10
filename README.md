@@ -113,9 +113,11 @@ $ sh build.sh -s
 ```
 
 ## Install
-With the added support for [Web Shell](http://webshell.surge.sh/), now the CLI port of the same app is also available.
+With the added support for [Web Shell](https://webshell.surge.sh/), now the CLI port of the same app is also available.
 
-So at first, open the [Web Shell](http://webshell.surge.sh/) on browser, then to install the app run
+So if you're using the *Web Shell* under same user-profile, then just click the [Install](https://webshell.surge.sh/#install%20https://dateshortener.surge.sh/js/mod.js) link for direct installation.
+
+Otherwise to install it manually, open the [Web Shell](https://webshell.surge.sh/) on browser, run
 
 ```
 install https://dateshortener.surge.sh/js/mod.js
